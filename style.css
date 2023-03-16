@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body {
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: 600;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-form {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.search-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.search-form.active {
+    display: block;
+}
+
+.search-icon {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.search-icon:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-form {
+        width: 100%;
+        right: auto;
+        left: 0;
+    }
+}
+
+.card {
+    position: absolute;
+    top: 111%;
+    transform: translateY(50%);
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:nth-of-type(1) {
+    left: calc(20% - 142px);
+}
+
+.card:nth-of-type(2) {
+    left: calc(45% - 195px);
+}
+
+.card:nth-of-type(3) {
+    left: calc(66.5% - 199px);
+}
+
+.card:nth-of-type(4) {
+    left: calc(83.7% - 142px);
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-5%);
+}
+
+
+
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    background-color: #0062cc;
+}
+
+.images {
+    width: 95%;
+    height: 50%;
+    margin-top: 0%;
+}
+
+.ask-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+button[type="submit"] {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+button[type="submit"]:hover {
+    background-color: #f1f1f1;
+}
+
+.fas.fa-question {
+    display: inline-block;
+    transform: rotate(-15deg);
+}
+
+
+.submit_btn{
+    width: 25px;
+    height: 25px;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+}
+.division_3 {
+    margin-top: 20px;
+    border-spacing: 58px;
+}
+.label_1{
+    display: inline-block;
+    width: 80px;
+}
+textarea{
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+.label_2{
+    color: #ffffff;
+}
+.twitter,
+.facebook,
+.rss{
+    width:50px;
+    height: 50px;
+}
+.heading{
+    font-weight: 600;
+}
